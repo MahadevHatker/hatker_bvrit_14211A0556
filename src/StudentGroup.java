@@ -73,11 +73,17 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void removeFromIndex(int index) {
 		// Add your implementation here
+		
 	}
 
 	@Override
 	public void removeFromElement(Student student) {
 		// Add your implementation here
+		char ch;
+		if(ch=str.charAt(i))
+			continue;
+		str.append(ch);
+			
 	}
 
 	@Override
@@ -88,11 +94,27 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void removeToElement(Student student) {
 		// Add your implementation here
+		Object a=new Object();
+		a.bubblesort();
 	}
 
 	@Override
 	public void bubbleSort() {
 		// Add your implementation here
+		int temp;
+		for(int i=0;i<=arr.length;i++)
+		{
+			for(int j=i+1;j<arr.length-1;j++)
+			{
+				if(arr[i]>arr[j])
+				{
+					temp=arr[i];
+					arr[i]=arr[j];
+					arr[j]=temp;
+				}
+			}
+		}
+		System.out.println(" "+arr[i]);
 	}
 
 	@Override
